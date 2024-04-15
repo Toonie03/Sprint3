@@ -25,8 +25,11 @@ public class LoginController
     @FXML
     void onClickLogin(ActionEvent event) 
     {
-      model.showUser();
-      System.out.println("Login Clicked");
+    	if((UsernameTextField.textProperty().get()!="")&&(PasswordTextField.textProperty().get()!=""))
+    	{
+        	model.showUser();
+    	}
+    	System.out.println("Login Clicked");
     }
 
 
