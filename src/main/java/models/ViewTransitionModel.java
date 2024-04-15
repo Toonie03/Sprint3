@@ -5,8 +5,10 @@ import java.io.IOException;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import Views.UserController;
 
 public class ViewTransitionModel implements ViewTransitionModelInterface
@@ -14,11 +16,13 @@ public class ViewTransitionModel implements ViewTransitionModelInterface
 
   BorderPane mainview;
   UserModel model;
+  Stage stage;
   
-  public ViewTransitionModel(BorderPane view,UserModel newModel)
+  public ViewTransitionModel(BorderPane view,UserModel newModel, Stage newStage)
   {
     mainview = view;
     model = newModel;
+    stage = newStage;
   }
   
   
@@ -31,9 +35,12 @@ public class ViewTransitionModel implements ViewTransitionModelInterface
         .getResource("../Views/UserView.fxml"));
     try {
       Pane view = loader.load();
-      mainview.setCenter(view);
       UserController cont = loader.getController();
-//      cont.setModel(model);
+      Scene s = new Scene(view);
+      stage.setScene(s);
+      stage.show();
+      
+      //cont.setModel(model);
       
       
     } catch (IOException e) {

@@ -5,14 +5,15 @@ import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.stage.Stage;
 
 public class UserModel
 {
-  DoubleProperty money = new SimpleDoubleProperty();
+  Stage stage;
 
-  public UserModel()
+  public UserModel(Stage givenStage)
   {
-    
+    stage = givenStage;
     
   }
 
