@@ -24,7 +24,7 @@ public class Main extends Application
     BorderPane view = loader.load();
     LoginController cont = loader.getController();
     ViewTransitionModel vm =new ViewTransitionModel(view,model, stage); 
-    cont.setModel(vm);
+    cont.setModel(vm, model);
     
     
     Scene s = new Scene(view);

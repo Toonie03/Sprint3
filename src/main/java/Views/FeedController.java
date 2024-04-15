@@ -7,7 +7,7 @@ import models.ViewTransitionModelInterface;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-public class UserController
+public class FeedController
 {
   
     UserModel model;

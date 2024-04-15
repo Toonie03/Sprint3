@@ -3,13 +3,15 @@ package Views;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import models.UserModel;
 import models.ViewTransitionModelInterface;
 
 public class LoginController
 {
   
-    ViewTransitionModelInterface model;
-
+    ViewTransitionModelInterface ViewModel;
+    
+    UserModel model;
 
     @FXML
     private TextField PasswordTextField;
@@ -17,9 +19,10 @@ public class LoginController
     @FXML
     private TextField UsernameTextField;
     
-    public void setModel(ViewTransitionModelInterface newModel)
+    public void setModel(ViewTransitionModelInterface newViewModel, UserModel newModel)
     {
-      model=newModel;
+      ViewModel=newViewModel;
+      model = newModel;
     }
   
     @FXML
@@ -27,7 +30,7 @@ public class LoginController
     {
     	if((UsernameTextField.textProperty().get()!="")&&(PasswordTextField.textProperty().get()!=""))
     	{
-        	model.showUser();
+        	ViewModel.showUser();
     	}
     	System.out.println("Login Clicked");
     }
