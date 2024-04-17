@@ -8,6 +8,7 @@ import models.ViewTransitionModelInterface;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.util.StringConverter;
 import  javafx.util.converter.*;
 public class UserController
@@ -32,7 +33,8 @@ public class UserController
     		  model.getFollowing(), fmt);      
     }
 
-
+    @FXML
+    private ListView<?> UserPostsListView;
     @FXML
     private Label DisplayBioLabel;
 

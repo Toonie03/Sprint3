@@ -32,8 +32,8 @@
                <children>
                   <Label text="Followers" />
                   <Label text="Following" />
-                  <Label fx:id="FollowerTextLabel" text="5" />
-                  <Label fx:id="FollowingTextLabel" text="20" />
+                  <Label fx:id="FollowerTextLabel" text="#" />
+                  <Label fx:id="FollowingTextLabel" text="#" />
                </children>
                <padding>
                   <Insets top="10.0" />
