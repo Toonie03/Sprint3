@@ -31,7 +31,9 @@ public class ViewTransitionModel implements ViewTransitionModelInterface
   @Override
   public void showUser()
   {
-    FXMLLoader loader = new FXMLLoader();
+    
+	  
+	FXMLLoader loader = new FXMLLoader();
     loader.setLocation(ViewTransitionModel.class
         .getResource("../Views/UserView.fxml"));
     try {

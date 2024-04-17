@@ -1,5 +1,6 @@
 package Views;
 
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import models.UserModel;
@@ -18,6 +19,8 @@ public class UserController
     {
       ViewModel=newViewModel;
       model = newModel;
+      Bindings.bindBidirectional(UsernameLabel.textProperty(),
+    	        model.getName());
     }
 
    
@@ -27,6 +30,8 @@ public class UserController
 
     @FXML
     private Label FollowingTextLabel;
+    @FXML
+    private Label UsernameLabel;
 
     @FXML
     void onClickHome(ActionEvent event) {
