@@ -62,7 +62,7 @@
                         <Label id="displayNameLabel" fx:id="UsernameLabel" wrapText="true" />
                      </children>
                   </HBox>
-                  <Label prefHeight="96.0" prefWidth="178.0" text="Bio: Computer Scienist Who is pursuing a carrer in the healthcare industry" wrapText="true">
+                  <Label fx:id="DisplayBioLabel" prefHeight="96.0" prefWidth="178.0" wrapText="true">
                      <font>
                         <Font size="12.0" />
                      </font>

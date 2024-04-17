@@ -8,6 +8,8 @@ import models.ViewTransitionModelInterface;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.util.StringConverter;
+import  javafx.util.converter.*;
 public class UserController
 {
   
@@ -21,9 +23,18 @@ public class UserController
       model = newModel;
       Bindings.bindBidirectional(UsernameLabel.textProperty(),
     	        model.getName());
+      Bindings.bindBidirectional(DisplayBioLabel.textProperty(),
+    		  model.getBio());
+      StringConverter<Number> fmt = new NumberStringConverter();
+      Bindings.bindBidirectional(FollowerTextLabel.textProperty(),
+    		  model.getFollowers(), fmt);
+      Bindings.bindBidirectional(FollowingTextLabel.textProperty(),
+    		  model.getFollowing(), fmt);      
     }
 
-   
+
+    @FXML
+    private Label DisplayBioLabel;
 
     @FXML
     private Label FollowerTextLabel;
