@@ -27,9 +27,9 @@
    <center>
       <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <content>
-            <VBox prefHeight="383.0" prefWidth="496.0">
+            <VBox prefHeight="646.0" prefWidth="496.0">
                <children>
-                  <BorderPane prefHeight="181.0" prefWidth="496.0">
+                  <BorderPane prefHeight="209.0" prefWidth="496.0">
                      <top>
                         <HBox prefHeight="4.0" prefWidth="496.0" BorderPane.alignment="CENTER">
                            <children>
@@ -57,7 +57,7 @@
                                     <Font name="System Bold" size="13.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="67.0" prefWidth="461.0" text="Hi Students. No one has signed up to take databases, and that makes me super sad. I promise it is a fun course! Please register today!" wrapText="true" />
+                              <Label prefHeight="40.0" prefWidth="461.0" text="Hi Students. No one has signed up to take databases, and that makes me super sad. I promise it is a fun course! Please register today!" wrapText="true" />
                            </children>
                         </VBox>
                      </center>
@@ -108,6 +108,46 @@
                            </BorderPane.margin>
                         </Label>
                      </bottom>
+                  </BorderPane>
+                  <BorderPane prefHeight="190.0" prefWidth="496.0">
+                     <center>
+                        <VBox prefHeight="161.0" prefWidth="496.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="479.0" text="CSC 270 New Section!">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="44.0" prefWidth="473.0" text="Attention students, more seats have opened up in Data Structures for the fall. Register below!" wrapText="true" />
+                           </children>
+                        </VBox>
+                     </center>
+                     <bottom>
+                        <Label prefHeight="26.0" prefWidth="328.0" text="https://www.centre.edu/academics/course-catalog" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="20.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <top>
+                        <HBox prefHeight="31.0" prefWidth="498.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label prefHeight="16.0" prefWidth="411.0" text="michael.bradshaw">
+                                 <HBox.margin>
+                                    <Insets top="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="4/18/24">
+                                 <HBox.margin>
+                                    <Insets top="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </top>
                   </BorderPane>
                </children>
             </VBox>
