@@ -89,8 +89,8 @@ public class ViewTransitionModel implements ViewTransitionModelInterface
 	        .getResource("../Views/JobView.fxml"));
 	    try {
 	      Pane view = loader.load();
-	      JobsController cont = loader.getController();
-	      cont.setModel(this,JobsModel);
+	      FeedController cont = loader.getController();
+	      cont.setModel(this,FeedModel);
 	      Scene s = new Scene(view);
 	      stage.setScene(s);
 	      stage.show();
