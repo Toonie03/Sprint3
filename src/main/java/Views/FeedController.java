@@ -23,20 +23,20 @@ public class FeedController
       ViewModel=newViewModel;
       model = newModel;
       
-      Bindings.bindBidirectional(UserNameLabel.textProperty(),
-  	        model.getUserName());
-      
-      Bindings.bindBidirectional(PostTitleLabel.textProperty(),
-    	        model.getPostTitle());
-      
-      Bindings.bindBidirectional(PostContentLabel.textProperty(),
-    	        model.getPostContent());
-      
-      Bindings.bindBidirectional(PostDateLabel.textProperty(),
-    	        model.getPostDate());
-      
-      Bindings.bindBidirectional(ExternalWebLinkLabel.textProperty(),
-    	        model.getExternalWebLink());
+//      Bindings.bindBidirectional(UserNameLabel.textProperty(),
+//  	        model.getUserName());
+//      
+//      Bindings.bindBidirectional(PostTitleLabel.textProperty(),
+//    	        model.getPostTitle());
+//      
+//      Bindings.bindBidirectional(PostContentLabel.textProperty(),
+//    	        model.getPostContent());
+//      
+//      Bindings.bindBidirectional(PostDateLabel.textProperty(),
+//    	        model.getPostDate());
+//      
+//      Bindings.bindBidirectional(ExternalWebLinkLabel.textProperty(),
+//    	        model.getExternalWebLink());
     }
     
 
