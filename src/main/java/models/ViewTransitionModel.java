@@ -10,20 +10,25 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import Views.FeedController;
+import Views.JobsController;
 import Views.UserController;
 
 public class ViewTransitionModel implements ViewTransitionModelInterface
 {
 
   BorderPane mainview;
-  UserModel model;
+  UserModel UserModel;
   Stage stage;
+  FeedModel FeedModel;
+  JobsModel JobsModel;
   
-  public ViewTransitionModel(BorderPane view,UserModel newModel, Stage newStage)
+  public ViewTransitionModel(BorderPane view,UserModel newModel, Stage newStage, FeedModel newFeed, JobsModel newJobs)
   {
     mainview = view;
-    model = newModel;
+    UserModel = newModel;
     stage = newStage;
+    FeedModel = newFeed;
+    JobsModel = newJobs;
   }
   
   
@@ -37,7 +42,7 @@ public class ViewTransitionModel implements ViewTransitionModelInterface
     try {
       Pane view = loader.load();
       UserController cont = loader.getController();
-      cont.setModel(this,model);
+      cont.setModel(this,UserModel);
       Scene s = new Scene(view);
       stage.setScene(s);
       stage.show();
@@ -61,7 +66,7 @@ public class ViewTransitionModel implements ViewTransitionModelInterface
 	    try {
 	      Pane view = loader.load();
 	      FeedController cont = loader.getController();
-	      cont.setModel(this,model);
+	      cont.setModel(this,FeedModel);
 	      Scene s = new Scene(view);
 	      stage.setScene(s);
 	      stage.show();
@@ -81,11 +86,11 @@ public class ViewTransitionModel implements ViewTransitionModelInterface
   {
 	    FXMLLoader loader = new FXMLLoader();
 	    loader.setLocation(ViewTransitionModel.class
-	        .getResource("../Views/FeedView.fxml"));
+	        .getResource("../Views/JobView.fxml"));
 	    try {
 	      Pane view = loader.load();
 	      FeedController cont = loader.getController();
-	      cont.setModel(this,model);
+	      cont.setModel(this,FeedModel);
 	      Scene s = new Scene(view);
 	      stage.setScene(s);
 	      stage.show();
