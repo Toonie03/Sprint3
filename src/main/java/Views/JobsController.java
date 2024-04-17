@@ -18,31 +18,31 @@ public class JobsController {
 	{
   	ViewModel=newViewModel;
   	model = newModel;
-
-	Bindings.bindBidirectional(UserNameLabel.textProperty(),
-  	        model.getUserName());
-      
-      	Bindings.bindBidirectional(JobTitleLabel.textProperty(),
-    	        model.getJobTitle());
-      
-      	Bindings.bindBidirectional(PostContentLabel.textProperty(),
-    	        model.getJobPost());
-      
-      	Bindings.bindBidirectional(ExternalWebLinkLabel.textProperty(),
-    	        model.getJobLink());
+//
+//	Bindings.bindBidirectional(UserNameLabel.textProperty(),
+//  	        model.getUserName());
+//      
+//      	Bindings.bindBidirectional(JobTitleLabel.textProperty(),
+//    	        model.getJobTitle());
+//      
+//      	Bindings.bindBidirectional(PostContentLabel.textProperty(),
+//    	        model.getJobPost());
+//      
+//      	Bindings.bindBidirectional(ExternalWebLinkLabel.textProperty(),
+//    	        model.getJobLink());
 	}
-
-	@FXML
-        private Label UserNameLabel;
-	    
-        @FXML
-	private Label JobTitleLabel;
-	    
-	@FXML
-	private Label JobPostLabel;
-	
-	@FXML
-	private Label JobLinkLabel;
+//
+//	@FXML
+//        private Label UserNameLabel;
+//	    
+//        @FXML
+//	private Label JobTitleLabel;
+//	    
+//	@FXML
+//	private Label JobPostLabel;
+//	
+//	@FXML
+//	private Label JobLinkLabel;
 	
   	@FXML
   	void onClickHome(ActionEvent event) {
