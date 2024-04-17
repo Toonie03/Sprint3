@@ -52,7 +52,7 @@
                         </HBox>
                         <HBox prefHeight="86.0" prefWidth="498.0">
                            <children>
-                              <Label text="Hello Everyone. My Name is Mia Tommill. I am looking for someone ot become my personal assistanttutor for my computer science clsses. I pay 20$ an hour and would need tutroing for four hours throughout the enitre wek. Click the link below to apply" wrapText="true" />
+                              <Label text="Hello Everyone. My Name is Mia Tomillo. I am looking for someone ot become my personal assistanttutor for my computer science clsses. I pay 20$ an hour and would need tutroing for four hours throughout the enitre wek. Click the link below to apply" wrapText="true" />
                            </children>
                         </HBox>
                      </children>
